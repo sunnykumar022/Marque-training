@@ -1,0 +1,30 @@
+css unit (relative and absolute)
+1. px
+2.%
+3.em:- relative to parent font size (2em means twice the size of parent)
+4.rem:
+5.vw:
+6.vh:
+ 
+Box sizing is a CSS property that defines how the width and height of an element are calculated. There are two main values for box-sizing:  
+1. content-box: default, width and height only include content, padding and border are added outside    
+2. border-box: width and height include content, padding and border, making it easier to manage layout  
+eg. if you set width: 200px and padding: 20px, the total width will still be 200px instead of 240px.
+
+
+block level elements: take up the full width of their container and start on a new line (e.g., <div>, <p>, <h1>)
+inline elements: only take up as much width as necessary and do not start on a new line (e.g., <span>, <a>, <strong>)   
+
+inline block height and width can be added through display: inline-block; it allows elements to sit next to each other while still respecting height and width properties.
+
+position:(4 properties: top, right, bottom, left)
+static prevent element to useing top, right ,bottom and left properties, it is the default position for all elements.
+1. static: default, elements are positioned according to the normal flow of the document
+2. relative: elements are positioned relative to their normal position, allowing you to move them using top, right, bottom, left properties 
+
+3. absolute: elements are positioned relative to the nearest positioned ancestor (not static), or the initial containing block if no such ancestor exists. They are removed from the normal document flow, meaning they do not affect the position of other elements and can overlap them.
+4. fixed: elements are positioned relative to the viewport, meaning they stay in the same place even when the page is scrolled. They are also removed from the normal document flow and can overlap other elements.
+
+sticky: elements are positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is treated as relative until it crosses a specified threshold, at which point it becomes fixed to the viewport. This allows for elements that remain visible while scrolling but only within a certain area of the page.
+
+z-index: controls the stacking order of elements. Elements with a higher z-index will be displayed in front of those with a lower z-index. It only works on positioned elements (relative, absolute, fixed, sticky).
