@@ -103,20 +103,42 @@ nav {
 
   padding: 5px;
   border-radius: 10px;
-
-  background-color: rgb(213, 206, 206);
+  align-items: center;
+  /* background-color: rgb(213, 206, 206); */
 }
 
 .btn-box {
   width: 70%;
-  height: 80%;
-  background-color: aquamarine;
+  height: 100%;
+  /* background-color: aquamarine; */
+  border: 2px solid rgb(84, 207, 255);
+  border-radius: 10px;
+  padding-left: 20px;
+  
+  
+}
+.btn-box input{
+  width: 90%;
+  height: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
 }
 
 .login-box {
   width: 25%;
   height: 80%;
-  background-color: rgb(134, 233, 114);
+  /* background-color: rgb(134, 233, 114); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-box-items{
+  align-items: center;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap
 }
 
 /* =========================
@@ -323,29 +345,43 @@ footer section{
 }
 #footer-nav-top{
       width: 100%;
-    height: 300px;
-    background: green;
+    /* height: 300px; */
+    padding: 20px;
+    /* background: green; */
     display: flex;
     justify-content: space-between;
+    padding: 40px;
 
 }
 #footer-nav-top-left{
-  background: pink;
+  /* background: pink; */
   width:60%;
   display: flex;
   justify-content: space-around;
+  position: relative;
+}
+#footer-nav-top-left p{
+  position: relative;
+  bottom: 10px;
 }
 #footer-nav-top-right{
   display: flex;
       width: 40%;
-    background: purple;
+    /* background: purple; */
     justify-content: space-around;
+}
+.footer-nav-top-items li{
+  list-style: none;
+}
+.footer-nav-top-items a{
+  text-decoration: none;
+  color: inherit;
 }
 #footer-nav-bottom
  {
     width: 100%;
-    height: 100px;
-    background: rgb(87, 87, 33);
+    padding: 20px;
+    /* background: rgb(87, 87, 33); */
     display: flex;
     justify-content: space-around;
     align-items: center;
