@@ -1,0 +1,9 @@
+.grid-container{
+    height: 600px;
+    width: 50%;
+    border: 1px solid red;
+    background-color: beige;
+    display: grid;
+
+    
+}
