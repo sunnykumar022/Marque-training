@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic-Light</title>
+  <style>
+    .container {
+      width: 200px;
+      height: 500px;
+      background-color: rgb(53, 53, 55);
+      margin-left: 40%;
+      margin-top: 5%;
+      border-radius: 20px;
+      padding: 10px;
+    }
+
+    .light-container {
+      background-color: rgb(10, 16, 22);
+      width: 180px;
+      height: 150px;
+      margin: 10px auto;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .red, .yellow, .green {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      opacity: 0.8; /* dim when off */
+    }
+
+    .red {
+      background-color: red;
+      animation: red-light 9s infinite;
+    }
+
+    .yellow {
+      background-color: yellow;
+      animation: yellow-light 9s infinite;
+    }
+
+    .green {
+      background-color: green;
+      animation: green-light 9s infinite;
+    }
+
+    @keyframes red-light {
+      0%, 33% { opacity: 1; box-shadow: 0 0 20px white; }
+      34%, 100% { opacity: 0.8; box-shadow: none; }
+    }
+
+    @keyframes yellow-light {
+      34%, 66% { opacity: 1; box-shadow: 0 0 20px white; }
+      0%, 33%, 67%, 100% { opacity: 0.8; box-shadow: none; }
+    }
+
+    @keyframes green-light {
+      67%, 100% { opacity: 1; box-shadow: 0 0 20px white; }
+      0%, 66% { opacity: 0.8; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="light-container">
+      <div class="red"></div>
+    </div>
+    <div class="light-container">
+      <div class="yellow"></div>
+    </div>
+    <div class="light-container">
+      <div class="green"></div>
+    </div>
+  </div>
+</body>
+</html>

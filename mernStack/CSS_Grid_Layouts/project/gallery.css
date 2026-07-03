@@ -46,6 +46,7 @@ h1{
     background-color: white;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    
     grid-auto-rows: 200px;
     /* grid-auto-flow: row; */
     gap: 20px;

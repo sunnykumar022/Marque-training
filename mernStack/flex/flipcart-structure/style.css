@@ -389,3 +389,10 @@ footer section{
 .footer-nav-item{
   
 }
+@media (max-width:1000px){
+    body{
+        background-color: green;
+    }
+}
+
+
