@@ -1,12 +1,12 @@
 "use strict";//treat all js code as newer version
 
-// alert(3+3) //we are using node js,  not beowser
+// alert(3+3) //we are using node js,  not browser
 
 let name="Sunny"
 let age=19
 let isLoggedIn=false
-
-//number==>2 to power 53
+2
+//number==> to power 53
 //bigint
 //String ==>""
 //boolean ==>true/false
@@ -17,5 +17,5 @@ let isLoggedIn=false
 
 //Object
 
-console.log(typeof undefined);//undefinde
+console.log(typeof undefined);//undefined
 console.log(typeof null) // object

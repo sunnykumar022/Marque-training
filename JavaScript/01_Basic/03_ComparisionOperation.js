@@ -3,10 +3,10 @@
 //  console.log(typeof score);
 //  console.log(typeof(score));
 
- let valueInNumber=Number(score);
-//  console.log(typeof valueInNumber);
+ let valueInNumber=Number(score);//NaN
+//  console.log(typeof valueInNumber);//number
 
-//  console.log(valueInNumber);
+//  console.log(valueInNumber);//NaN
  
  //"33"=>33
  //33abc =>NaN
@@ -23,11 +23,13 @@
 
  let someNum=33
  let stringNum=String(someNum)
-//  console.log(stringNum);
+//  console.log(stringNum);//33
+//  console.log(typeof stringNum);//string
+ 
  
  //***********************Operations******** */
 
  let value = 3;
  let negValue=-value;
- console.log(negValue);
+//  console.log(negValue);//-3
  

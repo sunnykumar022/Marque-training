@@ -1,6 +1,6 @@
 // Primitive
 
-//7 types: String,Number,Boolean,null,undefined,symbol,BigInnt
+//7 types: String,Number,Boolean,null,undefined,symbol,BigInt
 
 const id=Symbol("123")
 const anotherId=Symbol("123")
@@ -21,7 +21,7 @@ const myfunction=function(){
     console.log("Hello World");   
 
 }
-// console.log(typeof myfunction);
+// console.log(typeof myfunction);//function
 
 //==============================================
 
