@@ -1,0 +1,44 @@
+a=400
+if (true){
+    let a=10//if here is not a then it takes global a
+    const b=20
+    var c=30
+
+    // console.log("inner ",a);
+    
+
+}
+
+
+
+//console.log(a);//ReferenceError: a is not defined
+// console.log(b);//ReferenceError: b is not defined
+// console.log(c);//30
+// console.log(a)
+
+function one(){
+    const username="Sunny"
+    function two(){
+        const website ="Youtube";
+        console.log(username);
+        
+    }
+    // console.log(website);//ReferenceError: website is not defined
+    two();
+    
+}
+// one();
+
+console.log(addone(5));
+function addone(num){
+    return num+1
+}
+
+
+
+// console.log(addtwo(5));//because of fnction expression --->  ReferenceError: Cannot access 'addtwo' before initialization
+const addtwo=function(num){//function expression
+    return num+2
+}
+
+console.log(addtwo(5));
